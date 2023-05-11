@@ -1,2 +1,0 @@
-# Assymetric and Symmetric
-
