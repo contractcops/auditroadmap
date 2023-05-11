@@ -1,2 +1,0 @@
-# Mastering Ethereum Book
-
