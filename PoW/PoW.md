@@ -1,11 +1,12 @@
 # PoW
 
-<h1> Proof of Work</h1>
+## PoW
+
+## Proof of Work
 
 👉In short, the purpose of this consensus mechanism and others like it, is to reach consensus between a certain number of parties.
 
-Consensus = agreement.
-----------------------
+### Consensus = agreement.
 
 👉nodes must figure out complex mathematical equations before they can validate transactions.
 
@@ -21,8 +22,7 @@ Consensus = agreement.
 
 ❗If we take a more technical perspective though, they’re not exactly “processing transactions”. All transactions are already fully prepared to be included in the blockchain when they reach miners. Miners only need to check their validity.
 
-The real processing that happens is more of an endless competition between all miners, the winner of which gets to create the next block in the chain.
-------------------------------------------------------------------------------------------------------------------------------------------------------
+### The real processing that happens is more of an endless competition between all miners, the winner of which gets to create the next block in the chain.
 
 👉The only way for an entity to disrupt the system and take over the network is by controlling 51% of the hashing power.
 
@@ -32,27 +32,26 @@ The real processing that happens is more of an endless competition between all m
 
 👉Another big drawback is the formation of mining pools (groups of miners who pool their resources together) who could potentially control the network and collectively shepard the network, adding a very real danger to a decentralized solution.
 
-Cryptographic hashes
---------------------
+### Cryptographic hashes
 
 Properties:
+
 1. hard to fake
-2. easy to validate
-In other words hash is like digital signature
+2. easy to validate In other words hash is like digital signature
 
 1.Hard to produce, making it impossible to create (fake) a valid signature without first having access to the original data;
 
 2.Trivial to verify. So that anyone can quickly validate data.
 
-<br>
- 👉Each transaction hash is derived from the data of the transaction itself, and serves as a unique identifier. - For example like we discussed with SHA-256 already in the other files.
+\
+👉Each transaction hash is derived from the data of the transaction itself, and serves as a unique identifier. - For example like we discussed with SHA-256 already in the other files.
 
-Each block has a hash, too. And that hash needs to follow certain rules.
-------------------------------------------------------------------------
+### Each block has a hash, too. And that hash needs to follow certain rules.
 
-<br>
+\
 
-# How does a miner prove he has done the work?
+
+## How does a miner prove he has done the work?
 
 👉Each miner is constantly trying to mine the next block in the chain. And they’re on a constant race with each other.
 
@@ -72,12 +71,11 @@ Each block has a hash, too. And that hash needs to follow certain rules.
 
 👉This difficulty is adjusted automatically every few blocks, in response to changes in the total hash rate of the network.
 
-👉If a lot of miners significantly increase their hash rate, or if a lot of miners join the game, the average time to mine a block will decrease
-------------------------------------------------------------------------------------------------------------------------------------------------
+### 👉If a lot of miners significantly increase their hash rate, or if a lot of miners join the game, the average time to mine a block will decrease
 
 👉In response to this, the difficulty may increase, to keep the average block time around 10 minutes.
 
-# Steps
+## Steps
 
 1. A transaction is requested and authenticated
 2. A block representing that a transaction is created
@@ -88,13 +86,9 @@ Each block has a hash, too. And that hash needs to follow certain rules.
 7. The update is distributed accross the network
 8. The transaction is complete
 
-How does the validation of block by node work?
-----------------------------------------------
+### How does the validation of block by node work?
 
-👉Blocks must first be validated to be added to the blockchain.
-The most accepted form of validation for open-source
-blockchains is proof of work—the solution to a
-mathematical puzzle derived from the block’s header.
+👉Blocks must first be validated to be added to the blockchain. The most accepted form of validation for open-source blockchains is proof of work—the solution to a mathematical puzzle derived from the block’s header.
 
 > The actual work of validating a block of transactions is guessing the correct nonce of the next block. Only blocks with a valid nonce may be added to the chain.
 
